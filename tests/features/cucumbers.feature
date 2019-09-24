@@ -1,10 +1,10 @@
 # Created by brianclauser at 9/24/19
 Feature: Cucumber Basket
-  As a gardner,
-  I want to carry cucumbers in a basket,
-  So that I don't drop them all.
+    As a gardener,
+    I want to carry cucumbers in a basket,
+    So that I don't drop them all.
 
-  Scenario: Add cucumbers to basket
+  Scenario: Add cucumbers to a basket
     Given the basket has 2 cucumbers
-    When 4 cucumbers are added to the basket
+    When 4 cucumbers are added to basket
     Then the basket contains 6 cucumbers
