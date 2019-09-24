@@ -2,9 +2,11 @@ from pytest_bdd import scenario, given, when, then
 
 from cucumbers import CucumberBasket
 
+
 @scenario('../features/cucumbers.feature', 'Add cucumbers to basket')
 def test_add():
     pass
+
 
 @given("the basket has 2 cucumbers")
 def basket():
@@ -17,5 +19,5 @@ def add_cucumbers(basket):
 
 
 @then("the basket contains 6 cucumbers")
-def basket_hass_total(basket):
+def basket_has_total(basket):
     assert basket.count == 6
